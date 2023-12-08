@@ -1,0 +1,20 @@
+.pane {
+    -fx-vgap: 10;
+    -fx-hgap: 10; 
+}
+
+.searchBox {
+    -fx-alignment: center-left; 
+    -fx-font-size: 25px;
+	-fx-text-fill: 	#000000;
+}
+
+.tabela {
+    -fx-alignment: BOTTOM_RIGHT; /* Alinha o conteúdo na parte inferior direita */
+    -fx-padding: 10; /* Adiciona um espaço interno ao redor do conteúdo */
+}
+
+.form-label{
+	-fx-font-size: 16px;
+	-fx-text-fill: #FFF;
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="ProjetoIntegrador.getData.GetProcesso"
+	styleClass="pane">
+	
+	
+	<Label text="Pesquisar Processos: "
+			GridPane.columnIndex="0" GridPane.rowIndex="0"
+			styleClass="form-label"
+	></Label>
+	<TextField fx:id="processoField"
+			GridPane.columnIndex="1" GridPane.rowIndex="0"
+			styleClass="searchBox">
+	</TextField>
+	
+	<Button text="Pesquisar"
+			fx:id="botaoPesquisar"
+			GridPane.columnIndex="3" GridPane.rowIndex="3"
+			onAction="#acessarProcesso"
+	></Button>
+	
+	<Button text="Criar Processo"
+			fx:id="botaoCriar"
+			GridPane.columnIndex="3" GridPane.rowIndex="4"
+			onAction="#criarProcesso"
+	></Button>
+	
+	<TableView fx:id="tabela" visible="false" styleClass="tabela">
+		<columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+        </columnResizePolicy>
+        <columns>
+        	<TableColumn fx:id="idProcesso" 
+                         text="ID Processo" />
+            <TableColumn fx:id="columnTipoProcesso" 
+                         text="Tipo Processo" />
+            <TableColumn fx:id="columnAutor" 
+                         text="Autor"/>
+            <TableColumn fx:id="columnDescricao" 
+                         text="Descricao"/>
+			<TableColumn fx:id="columnVerProcesso" 
+                         text=""/>                   
+                         
+        </columns>
+    </TableView>
+	
+</GridPane>
+

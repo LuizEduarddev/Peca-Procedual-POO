@@ -1,0 +1,21 @@
+.login{
+	-fx-background-image: url('https://sintespe.org.br/wp-content/uploads/2023/03/STF.jpg');
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+
+.login-titulo{
+	-fx-font-size: 24px;
+	-fx-text-fill: #FFF;
+}
+
+.login-form-label{
+	-fx-font-size: 16px;
+	-fx-text-fill: #FFF;
+}
+
+.login-form-botao{
+	-fx-font-size: 13px;
+
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="ProjetoIntegrador.fxml.AppFXML"
+	styleClass="login" hgap="8" vgap="8">
+	
+	<Label text="STF Control System" 
+			styleClass="login-titulo"
+			GridPane.halignment="CENTER">
+	</Label>
+	
+	<Label text="Nome de usuário: "
+			styleClass="login-form-label"
+			GridPane.columnIndex="0" GridPane.rowIndex="8"
+	></Label>
+	<TextField fx:id="usuarioField"
+			GridPane.columnIndex="1" GridPane.rowIndex="8">
+	</TextField>
+	
+	<Label text="Senha: "
+			styleClass="login-form-label"
+			GridPane.columnIndex="0" GridPane.rowIndex="9"
+	></Label>
+	<PasswordField fx:id="senhaField"
+			GridPane.columnIndex="1" GridPane.rowIndex="9">
+	</PasswordField>
+	
+	<Button text="Entrar"
+			fx:id="botaoEntrar"
+			styleClass="login-form-botao"
+			GridPane.columnIndex="1" GridPane.rowIndex="10"
+			onAction="#getLogin"
+	></Button>
+	
+</GridPane>
+

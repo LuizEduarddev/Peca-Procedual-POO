@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="ProjetoIntegrador.getData.GetProcessItens">
+	
+	
+	<Label text="tribunal: "
+			GridPane.columnIndex="0" GridPane.rowIndex="0"
+	></Label>
+	<TextField fx:id="tribunal"
+			GridPane.columnIndex="1" GridPane.rowIndex="0">
+	</TextField>
+	
+	<Label text="instancia do processo: "
+			GridPane.columnIndex="0" GridPane.rowIndex="1"
+	></Label>
+	<TextField fx:id="instancia"
+			GridPane.columnIndex="1" GridPane.rowIndex="1">
+	</TextField>
+	
+	<Label text="tipo do processo: "
+			GridPane.columnIndex="0" GridPane.rowIndex="2"
+	></Label>
+	<TextField fx:id="tipoProcesso"
+			GridPane.columnIndex="1" GridPane.rowIndex="2">
+	</TextField>
+	
+	<Label text="polo do processo: "
+			GridPane.columnIndex="0" GridPane.rowIndex="4"
+	></Label>
+	<TextField fx:id="poloProcesso"
+			GridPane.columnIndex="1" GridPane.rowIndex="4">
+	</TextField>
+	
+	<Label text="representantes do processo:  "
+			GridPane.columnIndex="0" GridPane.rowIndex="5"
+	></Label>
+	<TextField fx:id="representanteProcesso"
+			GridPane.columnIndex="1" GridPane.rowIndex="5">
+	</TextField>
+	
+	<Label text="finalidade do processo: "
+			GridPane.columnIndex="0" GridPane.rowIndex="6"
+	></Label>
+	<TextField fx:id="finalidadeProcesso"
+			GridPane.columnIndex="1" GridPane.rowIndex="6">
+	</TextField>
+	
+	<Label text="referencia do processo: "
+			GridPane.columnIndex="0" GridPane.rowIndex="7"
+	></Label>
+	<TextField fx:id="referenciaProcesso"
+			GridPane.columnIndex="1" GridPane.rowIndex="7">
+	</TextField>
+	
+	<Label text="autor do processo:  "
+			GridPane.columnIndex="0" GridPane.rowIndex="8"
+	></Label>
+	<TextField fx:id="autorProcesso"
+			GridPane.columnIndex="1" GridPane.rowIndex="8">
+	</TextField>
+	
+	<Label text="reu do processo: "
+			GridPane.columnIndex="0" GridPane.rowIndex="9"
+	></Label>
+	<TextField fx:id="reuProcesso"
+			GridPane.columnIndex="1" GridPane.rowIndex="9">
+	</TextField>
+	
+	<Label text="descricao processo: "
+			GridPane.columnIndex="0" GridPane.rowIndex="10"
+	></Label>
+	<TextField fx:id="descricaoProcesso"
+			GridPane.columnIndex="1" GridPane.rowIndex="10">
+	</TextField>
+	
+	<Button text="Publicar"
+			fx:id="botaoPublicar"
+			GridPane.columnIndex="4" GridPane.rowIndex="13"
+			onAction="#publicarProcesso"
+	></Button>
+	
+	<Button text="Criar Processo"
+			fx:id="botaoCriar"
+			GridPane.columnIndex="5" GridPane.rowIndex="13"
+			onAction="#criarProcesso"
+	></Button>
+	
+</GridPane>
